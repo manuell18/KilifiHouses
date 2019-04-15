@@ -5,15 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".BedsitterFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bedsitterRecycler"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
-        android:layout_gravity="center"
-        android:text="@string/hello_blank_fragment"
-        android:textSize="50sp"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"/>
+        android:layout_height="wrap_content"/>
 
 </FrameLayout>
