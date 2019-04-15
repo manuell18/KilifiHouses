@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bedsitter"
+        android:enabled="true"
+        android:icon="@drawable/bedsitter"
+        android:title="Bedsitter"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/single"
+        android:enabled="true"
+        android:icon="@drawable/single"
+        android:title="Single"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/hostel"
+        android:enabled="true"
+        android:icon="@drawable/hostel"
+        android:title="Hostel"
+        app:showAsAction="never" />
+</menu>
