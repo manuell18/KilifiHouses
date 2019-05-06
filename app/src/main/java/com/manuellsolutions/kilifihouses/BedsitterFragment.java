@@ -25,6 +25,13 @@ import java.util.List;
  */
 public class BedsitterFragment extends Fragment {
 
+    int[] hostelImage = {R.drawable.bed1,R.drawable.bed2,R.drawable.bed3,R.drawable.bed4,R.drawable.bed5,R.drawable.bed6};
+    String[] hostelNumber = {"B1", "B2", "B3", "B4", "B5", "B6"};
+    String[] hostelContactName = {"James Niroh", "Peter Jacobs", "Sia and family", "Mourine and sons", "Angela Wekesa", "Pauline Kambi"};
+    String[] hostelContactNumber = {"0798745214", "0723135678", "0713278542", "0789123786", "0701400781", "0789100113"};
+    String[] hostelPrice = {"9,000", "6,000","7,000","10,000","8,000","9,000"};
+
+
     RecyclerView mRecyclerView;
     BedsitterRecylerAdapter mRecyclerAdapter;
     List<HouseModels> latestList;
@@ -59,13 +66,14 @@ public class BedsitterFragment extends Fragment {
 
     private void getLatestHouses() {
 
-        for (int i = 0; i<10 ; i++){
+        for (int i = 0; i<hostelImage.length ; i++){
+
             HouseModels houseModels = new HouseModels(
-                    R.drawable.wiz,
-                    "10",
-                    "Manu",
-                    "0790 689 222",
-                    "30,000"
+                    hostelImage[i],
+                    hostelNumber[i],
+                    hostelContactName[i],
+                    hostelContactNumber[i],
+                    hostelPrice[i]
             );
             latestList.add(houseModels);
         }

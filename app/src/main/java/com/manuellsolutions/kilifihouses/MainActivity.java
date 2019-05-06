@@ -23,8 +23,7 @@ public class MainActivity extends AppCompatActivity {
         startFragment = new BedsitterFragment();
         getSupportFragmentManager()
                 .beginTransaction()
-                .addToBackStack(null)
-                .replace(R.id.mainContent, startFragment, "bed_sitter")
+                .replace(R.id.mainContent, startFragment)
                 .commit();
 
         String location = getIntent().getStringExtra("location");
